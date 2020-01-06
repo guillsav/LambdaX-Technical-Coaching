@@ -16,7 +16,7 @@ def order_agnostic(arr: list, target: int) -> int:
 
 def ascending_binary_search(arr: list, target: int, start: int, end: int) -> int:
     while start <= end:
-        middle = start + (end - start)// 2
+        middle = start + (end - start) // 2
         if arr[middle] > target:
             end = middle - 1
         elif arr[middle] < target:
@@ -28,7 +28,7 @@ def ascending_binary_search(arr: list, target: int, start: int, end: int) -> int
 
 def descending_binary_search(arr: list, target: int, start: int, end: int) -> int:
     while start <= end:
-        middle = start + (end - start)// 2
+        middle = start + (end - start) // 2
         if arr[middle] > target:
             start = middle + 1
         elif arr[middle] < target:
